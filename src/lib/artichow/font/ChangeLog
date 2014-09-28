@@ -1,0 +1,56 @@
+========================================================== 
+
+                 Wen Quan Yi Zen Hei
+
+                     ChangeLog
+
+----------------------------------------------------------
+
+WenQuanYi Zen Hei ChangeLog:
+2007/08/12  Qianqian Fang (fangqq#gmail_com) (zixiao 0.2.10):
+          1. use X11 fonts, cm-unicode and M+fonts, for Latin/Japanese support
+          2. optimize "square" structures
+          3. improve font alignment by re-scaling in fontforge
+          4. incorporate 300+ updated vector glyphs
+          5. hand-draw Chinese table-making characters
+          6. use the latest nightly build (west yard) for the embedded bitmap glyphs
+          7. include BlueValues and a few other settings in Font Information
+
+2007/07/14  Qianqian Fang (fangqq#gmail_com) (alpha-pre-zixiao3 0.1.7):
+          1. complete zh_hk/zh_mo coverage by hand-drawing 214 new characters
+          2. embed wenquanyi bitmap song bitmap glyphs for 9-12pt
+          3. add 4 new non-cjk glyphs 0x0178->co,fr, 0x02BB->sm,to, 0x0175->ny, 0x0174->ny 
+             and complete the coverage for locales fr,sm,ny and to
+          4. delete hinting information, which cause distortion of the fonts
+          5. set the stroke width to 60
+          6. change encoding from unicode BMP to iso10646-1 to accommodate a
+             single Hongkong Hanzi in CJK Extension B.
+
+2007/07/07  Qianqian Fang (fangqq#gmail_com) (alpha-pre-zixiao2 0.1.6):
+          1. identify the missing characters for various zh_* locales
+          2. complete zh_cn/zh_sg coverage by adding glyph &#X02C9;
+          3. complete zh_tw coverage by hand-drawing the following characters
+              &#X752E;&#XFA0C;&#X9480;&#X74E1;&#X8520;&#X5A8A;&#X8A6B;
+              &#X7C03;&#X8AA7;&#X940E;&#X7A44;&#X6DBA;&#X7DC0;&#X9B1E;
+              &#X6415;&#X6313;&#X7703;&#X9C2D;&#X77B4;&#X9EF5;&#X7FC3;
+              &#X74AF;&#X660D;&#X4E99;&#X8430;&#X7BDC;&#X747F;&#X6E33;
+              &#X7E08;&#X9295;&#X7DEE;&#X730F;&#X90D4;&#X8AF3;&#X9F55;
+              &#X9AF3;&#X5D9E;&#XFA0D;&#X993E;&#X55CE;&#X7019;&#X9108;
+           4. add hinting/auto-instr information with fontforge
+           5. re-do about 50 ugly characters picked by testers
+
+2007/06/19  Qianqian Fang (fangqq#gmail_com) (alpha-pre-zixiao1 0.1.5):
+          1. first release for internal review
+          2. re-do ~600 GBK characters
+          3. including 19916 CJK Hanzi, merge with UnDotum
+          4. stroke width set to 50, optimize SG, SWG,HZG,HZWG etc
+
+2007/06/03  Qianqian Fang (fangqq#gmail_com) (pre alpha 0.1.2):
+          1. re-do 220 GB2312 glyphs
+          2. code polishing and stroke style adjustment
+
+2007/05/26  Qianqian Fang (fangqq#gmail_com) (pre alpha 0.1.1):
+          1. developer's first working prototype
+          2. remove 300 low-quality GB2312 glyphs and 600 GBK glyphs
+          3. code optimization and automation
+          4. fontforge script development
